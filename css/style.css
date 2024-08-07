@@ -51,6 +51,7 @@ img {
         text-decoration: none;
 margin-top: 24px;
 margin-bottom: 24px;
+margin-right: 76px
  }
  .logotype-header-black{
     font-family: "Raleway", sans-serif;
@@ -70,7 +71,6 @@ nav {
     align-items: center;
 }
 .ul-list-navigation{
-margin-left: 76px;
     margin-top: 24px;
     margin-bottom: 24px;
     gap: 40px;
@@ -187,9 +187,7 @@ background-color: #404BBF;
 background-color: #404BBF;
 }
 /* features */
- .visually-hidden{
-    visibility: hidden;
- }
+ .visually-hidden
 .h-two-features{
     font-family: "Roboto", sans-serif;
         font-weight: 700;
