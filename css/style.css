@@ -61,21 +61,21 @@ margin-bottom: 24px;
         text-transform: uppercase;
         color: #2e2f42;
         text-decoration: none;
-
+margin-right: 76px
  }
  /* navigation */
 nav {
     display: flex;
     gap: 40px;
+    align-items: center;
 }
 .ul-list-navigation{
 margin-left: 76px;
     margin-top: 24px;
     margin-bottom: 24px;
+    gap: 40px;
 display: flex;
 align-items: center
-
-
 }
 .navigation{
     font-family: "Roboto", sans-serif;
@@ -86,7 +86,7 @@ align-items: center
         color: #2e2f42;
         text-decoration: none;
         align-items: center;
-        padding-left: 40px;
+        padding: 24px 0;
 }
 .navigation:hover{
 font-family: "Roboto",
@@ -106,14 +106,15 @@ font-family: "Roboto",
 
 /* contacts */
 .adress{
-    font-style: normal
-}
+    gap: 40px;
+    font-style: normal}
 .ul-list-adress {
     display: flex;
     list-style-type: none;
     margin-top: 24px;
     margin-left: 332px;
     margin-bottom: 24px;
+    gap: 40px;
 }
 .mail-and-number{
     font-family: "Roboto",
@@ -124,7 +125,6 @@ font-family: "Roboto",
         letter-spacing: 0.02em;
         color: #434455;
         text-decoration: none;
-        padding-left: 40px;
     }
 
 .mail-and-number:hover{
@@ -145,6 +145,7 @@ font-family: "Roboto", sans-serif;
 .first-section{
     background-color:#2e2f42;
     height: 600px;
+    padding: 188px 0;
 }
 .h-one{
 font-family: "Roboto", sans-serif;
@@ -154,9 +155,8 @@ font-family: "Roboto", sans-serif;
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
-    margin-top: 68px;
-    padding-left: 316px;
-    padding-right: 316px;
+    max-width: 496px;
+    margin-left:316px;
 }
 .button{
      background: #4d5ae5;
@@ -169,6 +169,9 @@ font-family: "Roboto", sans-serif;
         margin-left: 480px;
         margin-right: 479px;
         box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+        display: block;
+        min-width: 169px;
+        border: none;
         background: #4d5ae5;
         font-weight: 500;
         font-size: 16px;
@@ -184,6 +187,9 @@ background-color: #404BBF;
 background-color: #404BBF;
 }
 /* features */
+ .visually-hidden{
+    visibility: hidden;
+ }
 .h-two-features{
     font-family: "Roboto", sans-serif;
         font-weight: 700;
@@ -199,14 +205,13 @@ background-color: #404BBF;
         display: flex;
         list-style-type: none;
         text-align: left;
+        gap: 24px;
 }
 .li-list-features{
- padding-left: 24px;
+width: calc((100% - 72px) / 4);
  margin-top: 72px;
 }
-.li-list-features:first-child{
-    padding-left: 0;
-}
+
 .h-three-features{
     font-family: "Roboto", sans-serif;
     font-weight: 500;
@@ -214,6 +219,7 @@ background-color: #404BBF;
     line-height: 120%;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 .p-features{
     font-family: "Roboto", sans-serif;
@@ -222,7 +228,6 @@ background-color: #404BBF;
         line-height: 150%;
         letter-spacing: 0.02em;
         color: #434455;
-        margin-top: 8px;
 }
 
 /* our-team */
@@ -239,6 +244,7 @@ background-color: #404BBF;
         text-align: center;
         color: #2e2f42;
         text-transform: capitalize;
+        margin-bottom: 72px;
 }
 .ul-list-our-team{
         list-style-type: none;
@@ -246,6 +252,10 @@ background-color: #404BBF;
 gap: 24px;
 align-items: center;
 }
+.div-text-our-team{
+padding: 32px 0
+}
+
 .h-three-our-team{
     font-family: "Roboto", sans-serif;
     font-weight: 500;
@@ -253,8 +263,8 @@ align-items: center;
     line-height: 120%;
     letter-spacing: 0.02em;
     color: #2e2f42;
-    margin-top: 32px;
     text-align: center;
+    margin-bottom: 8px
 }
 
 .p-our-team {
@@ -265,17 +275,13 @@ align-items: center;
     letter-spacing: 0.02em;
     color: #434455;
     text-align: center;
-    margin-top: 8px;
-    margin-bottom: 32px;
 }
 .li-photo-our-team{
-            margin-top: 72px;
-            margin-left: 24px;
             background-color: #fff;
+            width: calc((100% - 72px) / 4);
+            border-radius: 0px 0px 4px 4px;
 }
-.li-photo-our-team:first-child{
-    padding-left: 0;
-}
+
 
 /* our-portfolio */
 .h-two-potfolio{
@@ -287,12 +293,14 @@ align-items: center;
         color: #2e2f42;
         text-transform: capitalize;
         text-align: center;
+        margin-bottom: 72px;
 }
 .ul-list-our-potfolio{
         display: flex;
         list-style-type: none;
         flex-wrap: wrap;
-        margin-top: 72px;
+        column-gap: 24px;
+        row-gap: 48px;
 }
 
 
@@ -303,43 +311,18 @@ align-items: center;
         line-height: 120%;
         letter-spacing: 0.02em;
         color: #2e2f42;   
-        margin-top: 32px;
-        padding-left: 16px;
+        margin-bottom: 8px
 }
-.p-potfolio{
-    margin-top: 8px;
-    padding-left: 16px;
+.div-text-portfolio{
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
 }
-.photo-banking-app{
-border-bottom: 1px #FFFFFF;
-}
-.photo-cashless-payment {
-    padding-left: 24px;
-    border-bottom: 1px #FFFFFF;
-}
-.photo-meditation-app{
-    padding-left: 24px;
-    border-bottom: 1px #FFFFFF;
-}
-.photo-taxi-service{
-    margin-top: 48px;
-        border-bottom: 1px #FFFFFF;
-}
-.photo-screen-illustrations{
-margin-top: 48px;
-    padding-left: 24px;
-        border-bottom: 1px #FFFFFF;
 
-}
-.photo-online-courses{
-    margin-top: 48px;
-    padding-left: 24px;
-        border-bottom: 1px #FFFFFF;
-}
 /* footer-content */
 .footer{
         background: #2e2f42;
-        padding: 100px;
+        padding: 100px 0;
 }
 .logotype-footer-fiol{
     font-family: "Raleway", sans-serif;
@@ -348,8 +331,9 @@ margin-top: 48px;
         line-height: 117%;
         letter-spacing: 0.03em;
         text-transform: uppercase;
-        padding-top: 100px;
         color: #4d5ae5;
+        display: inline-block;
+        margin-bottom: 16px;
 }
 .logotype-footer-white{
 font-family: "Raleway",
@@ -360,7 +344,8 @@ font-family: "Raleway",
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #f4f4fd;
-    padding-top: 100px;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 .p-footer{
     font-family: "Roboto", sans-serif;
